@@ -12,8 +12,9 @@ public class Program {
 		Locale.setDefault(Locale.US);
 
 		SellerDao sellerDao = DaoFactory.createSellerDao();
-		Seller seller = sellerDao.findById(3);
 
+		System.out.println("=== Test 1: seller findyById =====");
+		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
 	}
 }
